@@ -52,23 +52,27 @@
       </div>
       <div style="padding: 5px 0px; width: 100%">
         <div
-          id="time1"
+          id="time"
           style="
             width: 100%;
             color: #606366;
-            font-size: 48px;
+            font-size: 56px;
+            font-family: 微软雅黑;
+            letter-spacing: 0px;
             margin-left: 10px;
           "
         ></div>
-        <div
+        <!-- <div
           id="time2"
           style="
             width: 100%;
             color: #606366;
-            font-size: 48px;
+            font-size: 56px;
+            font-family: 微软雅黑;
+            letter-spacing: 0px;
             margin-left: 10px;
           "
-        ></div>
+        ></div> -->
       </div>
       <div
         style="background-color: #f1f2f3; padding-top: 4px; padding-bottom: 6px"
@@ -154,9 +158,10 @@
       // 拼接
       return year + "-" + month + "-" + day + " " + hours + ":" + minutes;
     };
-    const cts = getCurrentTime().split(" ");
-    document.querySelector("#time1").innerHTML = cts[0];
-    document.querySelector("#time2").innerHTML = cts[1];
+    // const cts = getCurrentTime().split(" ");
+    // document.querySelector("#time1").innerHTML = cts[0];
+    // document.querySelector("#time2").innerHTML = cts[1];
+    document.querySelector("#time").innerHTML = getCurrentTime();
   </script>
   <style>
     .borderr {
