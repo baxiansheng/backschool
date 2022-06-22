@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>学生返校日常通行码</title>
+    <title>学生日常通行码</title>
   </head>
-  <body style="margin: 0px;">
+  <body style="margin: 0px; width: 100%">
     <div class="in" style="margin: 0px; width: 100%; border: 0px">
-      <div
+      <!-- <div
         style="
           text-align: center;
           width: 49%;
@@ -17,7 +17,7 @@
         "
       >
         <p style="color: #868788; font-size: 18px">申请表单</p>
-      </div>
+      </div> -->
       <div
         style="
           background-color: #f1f2f3;
@@ -25,11 +25,11 @@
           padding-bottom: 6px;
         "
       >
-        <div style="margin: auto; width: 95%; background-color: white">
+        <div style="margin: auto; width: 100%; background-color: white">
           <div
             style="
-              margin: 12px;
-              font-weight: bold;
+              margin: 0px 10px;
+              padding: 5px 0px;
               color: #000;
               font-size: 12px;
               display: flex;
@@ -39,24 +39,27 @@
             <img
               src="./file.png"
               alt="file"
-              width="2%"
-              height="2%"
+              width="13px"
+              height="10px"
               style="display: inline-block; margin-right: 0.5em"
             />
-            学生返校后通行码
+            学生日常通行码
           </div>
         </div>
         <div style="margin: auto; width: 95%">
-          <p style="color: #868788; font-size: 14px">入校时间</p>
+          <p style="color: #868788; font-size: 14px">扫码时间</p>
         </div>
       </div>
-      <div>
-        <div style="margin: auto; width: 95%">
-          <p
-            id="time"
-            style="color: #606366; font-weight: bold; font-size: 22px"
-          ></p>
-        </div>
+      <div style="padding: 5px 0px; width: 100%">
+        <div
+          id="time"
+          style="
+            width: 100%;
+            color: #606366;
+            font-size: 48px;
+            margin-left: 10px;
+          "
+        ></div>
       </div>
       <div
         style="background-color: #f1f2f3; padding-top: 4px; padding-bottom: 6px"
@@ -68,7 +71,7 @@
       <div>
         <div style="margin: auto; width: 35%; padding-bottom: 20px">
           <img
-            src="./ServerAvatarImage.jpg"
+            src="./my.jpeg"
             style="width: 100%; height: 100%; padding-top: 20px"
           />
         </div>
@@ -80,17 +83,20 @@
           <p style="color: #868788; font-size: 14px">通行码</p>
         </div>
       </div>
-      <div>
-        <div style="margin: auto; width: 25%">
-          <img
-            src="./pass.png"
-            style="
-              width: 100%;
-              height: 100%;
-              padding-top: 20px;
-              padding-bottom: 20px;
-            "
-          />
+      <div style="display: flex; justify-content: center; align-items: center">
+        <div
+          style="
+            width: 190px;
+            height: 190px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px 0px;
+            border: #072fb2 8px dashed;
+          "
+          class="borderr"
+        >
+          <img src="./pass.png" style="width: 180px; height: 180px" />
         </div>
       </div>
       <div
@@ -103,7 +109,7 @@
       <div>
         <div style="margin: auto; width: 95%">
           <p style="color: #606366; font-weight: bold; font-size: 18px">
-            王健，信息科学与工程学院，崂山南门（学生）入
+            王健，信息科学与工程学部，崂山南门（学生）入
           </p>
         </div>
       </div>
@@ -112,7 +118,7 @@
           background-color: #f1f2f3;
           padding-top: 10px;
           padding-bottom: 12px;
-          height: 200px;
+          height: 20px;
         "
       ></div>
     </div>
@@ -140,4 +146,34 @@
     };
     document.querySelector("#time").innerHTML = getCurrentTime();
   </script>
+  <style>
+    .borderr {
+      animation-name: bo;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+    }
+    @keyframes bo {
+      0% {
+        border: #072fb2 8px dashed;
+      }
+      15% {
+        border: #5269b8 8px dashed;
+      }
+      30% {
+        border: #7d8dc2 8px dashed;
+      }
+      50% {
+        border: #8e94c3 8px dashed;
+      }
+      70% {
+        border: #7d8dc2 8px dashed;
+      }
+      85% {
+        border: #5269b8 8px dashed;
+      }
+      100% {
+        border: #072fb2 8px dashed;
+      }
+    }
+  </style>
 </html>
